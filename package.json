@@ -1,0 +1,23 @@
+{
+  "name": "PRProjetWeb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauliusmi20/PRProjetWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pauliusmi20/PRProjetWeb/issues"
+  },
+  "homepage": "https://github.com/pauliusmi20/PRProjetWeb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
