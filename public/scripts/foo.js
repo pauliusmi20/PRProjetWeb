@@ -10,21 +10,20 @@
         		}
 			}
 }
-
-
 */
 
 
 
 function draw() {
-	var p1 = new Point (40,50);
+	var p1 = new Point (400,50);
 	var p2 = new Point (700,800);
-	var p3 = new Point (500,500);
+	var p3 = new Point (250,750);
 	
-	var test = new Triangle(p3,100);
-	drawLine(p1,p2);
-	drawLine(p3,p1);
-	drawTriangle(test);
+	//var test = newTriangle(p3,500);
+	var test = new Triangle(p1, p2, p3);
+	var list = test.getListTriangles();
+	var temp = getListTrianglesN(3,list);
+	drawLesTriangles(temp);
 }
 
 

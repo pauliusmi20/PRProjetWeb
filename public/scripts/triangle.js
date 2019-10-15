@@ -9,31 +9,31 @@ class Point{
 	}
 }
 
+
+
 class Triangle{
-/*	constructor(a, b, c){
+	constructor(a, b, c){
 		this.a = a;
 		this.b = b;
 		this.c = c;
-	} */
-	constructor(b, l){
-		this.a = new Point( b.x + l/2, b.y + Math.sqrt( l**2 - (l/2)**2 ) );
-		this.b = b;
-		this.c = new Point(b.x+l, b.y );
+
 	}
-	
 	getListTriangles(){
-		var triangles = new Array();
+
+		var ab = this.a.pMoy(this.b);
+		var ac = this.a.pMoy(this.c);
+		var bc = this.b.pMoy(this.c)
 		
-		var ab = this.a.pMoy(b);
-		var ac = this.a.pMoy(c);
-		var bc = this.b.pMoy(c);
-		
-			triangles.unshift(new Triangle(a,ab,ac) );
-			triangles.unshift(new Triangle(ab,b,bc) );
-			triangles.unshift(new Triangle(ab,bc,ac));
-			triangles.unshift(new Triangle(ac,bc,c) );
-		return triangles;
+		return [ new Triangle(this.a,ab,ac),
+				 new Triangle(ab,this.b,bc),
+				 new Triangle(ac,bc,this.c)] ;
 	} 	
+}
+
+function newTriangle(b, l){
+	return new Triangle(new Point( b.x + l/2, b.y + Math.sqrt( l**2 - (l/2)**2 ) ),
+						b, 
+						new Point(b.x+l, b.y ) );
 }
 	
 function drawLine(a,b){
@@ -41,12 +41,30 @@ function drawLine(a,b){
 	 	if (canvas.getContext) {	
     		var ctx = canvas.getContext('2d');
     		ctx.beginPath();
-    		ctx.moveTo(a.x,a.y); 
-    		ctx.lineTo(b.x,b.y);
+    		ctx.moveTo(a.x , a.y); 
+    		ctx.lineTo(b.x , b.y);
     		ctx.stroke();
     	}
 }
 
+function getListTrianglesSmaller(a){
+	var res = a.slice();
+	for (var i=0 ; i<a.length;i++){
+		var temp = a[i].getListTriangles();
+		for (var j=0 ; j<temp.length ;j++){
+			res.unshift(temp[j]);
+		}	
+	}	
+	return res;	
+}
+
+function getListTrianglesN(n,a){
+	var res = a;
+	for (var i=0; i<n; i++){
+		res = getListTrianglesSmaller(res);
+	}
+	return res;
+}
 
 function drawTriangle(n){
 	drawLine(n.a , n.b);
@@ -54,9 +72,12 @@ function drawTriangle(n){
 	drawLine(n.c , n.a);
 }
 
+
+
 function drawLesTriangles(a){
+	for(var i=0; i<a.length; i++){
+		drawTriangle(a[i]);
+		
+	}
 }
-
-
-
 function getListPoint(){} 
