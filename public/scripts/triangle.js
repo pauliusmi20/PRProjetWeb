@@ -9,8 +9,6 @@ class Point{
 	}
 }
 
-
-
 class Triangle{
 	constructor(a, b, c){
 		this.a = a;
@@ -29,11 +27,28 @@ class Triangle{
 				 new Triangle(ac,bc,this.c)] ;
 	} 	
 }
+/*
+function newTriangle(l){
+	var canvas = document.getElementById('canvas');
+	var b = new Point((canvas.width-l)/2,(canvas.height- ( Math.sqrt((l**2) - (( l/2)**2) ) )  -l )/2 );
+	
+	var a = new Point( b.x + l/2, b.y + Math.sqrt( l**2 - (l/2)**2 ) );
+	var c = new Point(b.x+l, b.y  );
+	
+	var l1 = new Line (b,a);
+	var l2 = new Line ( a ,c);
+	var l3 = new Line (c ,b );
+	return [l1 , l2, l3];
+										
+}
+*/
+function newTriangle(l){
+	var canvas = document.getElementById('canvas');
+	var b = new Point((canvas.width-l)/2,(canvas.height- ( Math.sqrt((l**2) - (( l/2)**2) ) )  -l )/2 );
+	var a = new Point( b.x + l/2, b.y + Math.sqrt( l**2 - (l/2)**2 ) );
+	var c = new Point(b.x+l, b.y  );
 
-function newTriangle(b, l){
-	return new Triangle(new Point( b.x + l/2, b.y + Math.sqrt( l**2 - (l/2)**2 ) ),
-						b, 
-						new Point(b.x+l, b.y ) );
+	return new Triangle(a,b,c);
 }
 	
 function drawLine(a,b){
@@ -76,8 +91,28 @@ function drawTriangle(n){
 
 function drawLesTriangles(a){
 	for(var i=0; i<a.length; i++){
-		drawTriangle(a[i]);
-		
+		drawTriangle(a[i]);		
 	}
 }
-function getListPoint(){} 
+
+
+function reset () {
+	var canvas = document.getElementById('canvas');
+	const context = canvas.getContext('2d');
+	context.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function drawTriangleMain() {
+	reset ();
+	var p1 = new Point (100,100);
+
+	var n = document.getElementById("n").value;
+	var size = document.getElementById("size").value;
+
+	var temp = newTriangle(parseInt(size));
+	
+	var temp = temp.getListTriangles();
+	var temp = getListTrianglesN(n,temp);
+	drawLesTriangles(temp);
+}
+

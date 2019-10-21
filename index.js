@@ -14,10 +14,13 @@ app.engine('hbs', hbs({
 app.set('view engine', 'hbs');
 
 
-app.get('/triangle.html', function (req, res) {
+app.get('/triangle', function (req, res) {
   res.sendFile(__dirname + "/public/html/triangle.html");
 })
 
+app.get('/flocon', function (req, res) {
+  res.sendFile(__dirname + "/public/html/flocon.html");
+})
 
 app.get('/*', function (req, res) {
   res.sendFile(__dirname + "/public/html/index.html");
