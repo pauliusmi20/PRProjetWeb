@@ -34,7 +34,6 @@ class Line{
 
 function drawLine(a){
 	var canvas = document.getElementById('canvas');
-	 	if (canvas.getContext) {	
     		var ctx = canvas.getContext('2d');
     		ctx.beginPath();
     		ctx.moveTo(a.p1.x , a.p1.y); 
