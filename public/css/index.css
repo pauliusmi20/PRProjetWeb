@@ -1,19 +1,20 @@
-.main
-{
-	
-}
 
-
-#blocImage
+#blockImg
 {
  position: relative;
  width: 100%;
  text-align: center;
  vertical-align: top;
  font-size:13px;
- color:#FFFFFF;
 }
-   
+
+
+#blockImg p {
+
+    width: 100%;
+    margin : auto;
+    z-index: 200;
+}
    
 #blockTxt1
 {
@@ -53,7 +54,37 @@
  color: white;
 }
 
+#formu{
 
+ width: 50%;
+ position: absolute;
+ top: 35%;
+ left: 25%;
+ text-align: center;
+ font-family: Verdana, Arial, Sans-serif;
+ font-size: 1.5em;
+ color: white;
+
+}
+
+
+#submit:hover
+{
+ border: 2px solid black;
+ background-color: gray;
+}
+
+#frgPwd:hover
+{
+ border: 2px solid gray;
+ color: gray;
+}
+
+#signUp:hover
+{
+ border: 2px solid gray;
+ color: gray;
+}
 
 
 
