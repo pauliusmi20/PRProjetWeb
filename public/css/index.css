@@ -1,3 +1,7 @@
+body {
+background-image: url("../images/backgr.gif");
+background-attachment: fixed; /* Le fond restera fixe */
+}
 
 #blockImg
 {
@@ -47,7 +51,7 @@
 
  width: 50%;
  position: absolute;
- top: 25%;
+ top: 600%;
  left: 25%;
  text-align: center;
  font-family: Verdana, Arial, Sans-serif;
@@ -72,7 +76,7 @@
 
 #frgPwd:hover
 {
- border: 2px solid gray;
+ border: 1px solid gray;
  color: gray;
  
 }
@@ -86,10 +90,68 @@
 
 #signUp:hover
 {
- border: 2px solid gray;
- color: purple;
+ border: 1px solid gray;
 }
 
+#propos{
+
+ position: absolute;
+ top: 1900%;
+ left: 10%;
+ font-size: 1.5em;
+
+
+}
+
+#contact{
+
+ position: absolute;
+ top: 2000%;
+ left: 10%;
+ font-size: 1.5em;
+
+
+}
+
+#facebook{
+
+ position: absolute;
+ top: 1900%;
+ left: 60%;
+
+}
+
+#twetter{
+
+ position: absolute;
+ top: 1900%;
+ left: 70%;
+
+
+}
+
+#instagram{
+	
+ position: absolute;
+ top: 1900%;
+ left: 80%;
+
+}
+
+#hash{
+	
+ position: absolute;
+ top: 2200%;
+ left: 10%;
+ font-size: 2.5em;
+
+}
+
+a {
+
+ color: white;
+ text-decoration: underline;
+}
 
 
 

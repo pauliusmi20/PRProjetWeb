@@ -5,6 +5,12 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../css/signup.css">
 	<script src="../css/index.js"></script>
+	
+	<link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.min.js" type="text/javascript">
+    </script>
+    
 </head>
 
 <body>
@@ -13,7 +19,7 @@
 		
 		<div id="blockImg">
 	
-			<img  src="../images/Eu5U.gif" alt="" border="0" height="100%" width="100%">
+			<!--<img  src="../images/Eu5U.gif" alt="" border="0" height="100%" width="100%">-->
 			
     		<div id="blockTxt1">  please fill out the form below </div>
     		
@@ -26,24 +32,24 @@
 					
 					
 					
-					Name : <br><input name="info" id="usr" type="text" ><br>
+					Name : <br><input name="info" id="usr" placeholder="Ex : Radja" type="text" ><br>
 					
-					Surname : <br><input name="info" id="usr" type="text"><br>
+					Surname : <br><input name="info" id="usr" placeholder="Ex : Mickunas" type="text"><br>
 					
-					E-mail : <br><input  id="mail" type="texte" ><br>
+					E-mail : <br><input  id="mail" type="email" placeholder="  your@email.com " pattern=".+@.+..+" size="30" required><br>
 					
-					confirm e-mail : <br><input  id="mail" type="text"><br>
+					confirm e-mail : <br><input  id="mail" type="email" placeholder="  your@email.com " pattern=".+@.+..+" size="30" required><br>
 					
-					Phone number : <br><input  id="tel" type="text" ><br>
+					Phone number : <br><input  id="tel" placeholder="Ex : 06********" type="tel" ><br>
 					
 					Date of birth : <br><input  id="date" type="date"><br>
 					
 					Gender : <input name="gender" id="F"  type="radio">Female
 					<input name="gender" id="M"  type="radio">Male <br>
 					
-					Create password : <br><input  id="pwd" type="text"><br>
+					Create password : <br><input  id="pwd" type="text" placeholder="********" minlenght="8" maxlenght="20" required><br>
 					
-					Confirm password : <br><input id="pwd" type="text" ><br>
+					Confirm password : <br><input id="pwd" type="text" placeholder="********" minlenght="8" maxlenght="20" required><br>
 					
 					
 					accept the terms and conditions of our site : <input  id="Conditions" type="checkbox"><br>
@@ -56,7 +62,17 @@
 				
     		</div> 
     		
+    		<div id="details">
     		
+    			<div id="propos" ><a href="">A propos de FraDant</div><br>
+    			<div id="contact" ><a href="">Nous contacter</div><br>
+    			<div id="facebook"><i class="fab fa-facebook-f fa-5x"></i></div>
+    			<div id="twetter"><i class="fab fa-twitter fa-5x"></i></div>
+    			<div id="instagram"><i class="fab fa-instagram fa-5x"></i></div>
+    			
+    			<div id="hash"><i class="fas fa-hashtag fa-1x"></i>FractalsForEveryone</div>
+    			
+    		</div>
     			
 		</div>
 		

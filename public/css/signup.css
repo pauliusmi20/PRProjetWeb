@@ -1,3 +1,8 @@
+body {
+background-image: url("../images/Eu5U.gif");
+background-attachment: fixed; /* Le fond restera fixe */
+}
+
 #blockImg
 {
  position: relative;
@@ -43,7 +48,7 @@ h1
 
  width: 50%;
  position: absolute;
- top: 20%;
+ top: 300%;
  left: 25%;
  text-align: center;
  font-family: Verdana, Arial, Sans-serif;
@@ -85,3 +90,64 @@ h1
  border: 2px solid gray;
  color: purple;
 }
+
+#propos{
+
+ position: absolute;
+ top: 2300%;
+ left: 10%;
+ font-size: 1.5em;
+
+
+}
+
+#contact{
+
+ position: absolute;
+ top: 2400%;
+ left: 10%;
+ font-size: 1.5em;
+
+
+}
+
+#facebook{
+
+ position: absolute;
+ top: 2400%;
+ left: 60%;
+
+}
+
+#twetter{
+
+ position: absolute;
+ top: 2400%;
+ left: 70%;
+
+
+}
+
+#instagram{
+	
+ position: absolute;
+ top: 2400%;
+ left: 80%;
+
+}
+
+#hash{
+	
+ position: absolute;
+ top: 2600%;
+ left: 10%;
+ font-size: 2.5em;
+
+}
+
+a {
+
+ color: white;
+ text-decoration: underline;
+}
+
