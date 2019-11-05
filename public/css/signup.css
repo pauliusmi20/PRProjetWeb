@@ -1,0 +1,87 @@
+#blockImg
+{
+ position: relative;
+ width: 100%;
+ height: 100%;
+ text-align: center;
+ vertical-align: top;
+ font-size:13px;
+}
+
+
+#blockImg p {
+
+    width: 100%;
+    margin : auto;
+    z-index: 200;
+}
+   
+#blockTxt1
+{
+ width: 50%;
+ position: absolute;
+ top: 25px;
+ left: 25%;
+ text-shadow: 1px 1px cyan;
+ text-align: center;
+ font-family: "cursive", Arial, Sans-serif;
+ font-size: 2.5em;
+ color: purple;
+} 
+
+
+h1
+{
+ text-align: center;
+ font-family: Verdana, Arial, Sans-serif;
+ font-size: 1.5em;
+ color: rgb(100,50,250);
+}
+    
+
+#formu{
+
+ width: 50%;
+ position: absolute;
+ top: 20%;
+ left: 25%;
+ text-align: center;
+ font-family: Verdana, Arial, Sans-serif;
+ font-size: 1.5em;
+ color: white;
+ box-shadow:  5px -5px 20px 15px rgba(10, 50, 80, 0.9)  ;
+
+
+}
+
+
+#submit:hover
+{
+ border: 2px solid black;
+ background-color: gray;
+}
+
+#frgPwd
+{
+	color: black;
+}
+
+#frgPwd:hover
+{
+ border: 2px solid gray;
+ color: gray;
+ 
+}
+
+
+#signUp
+{
+ color: white;
+
+}
+
+#signUp:hover
+{
+ border: 2px solid gray;
+ color: purple;
+}
