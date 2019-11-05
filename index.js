@@ -16,6 +16,13 @@ app.set('view engine', 'hbs');
 
 app.get('/frgPwd', function (req, res) {
   res.sendFile(__dirname + "/public/html/frgPwd.html");
+
+app.get('/tree', function (req, res) {
+  res.sendFile(__dirname + "/public/html/tree.html");
+})
+
+app.get('/triangle', function (req, res) {
+  res.sendFile(__dirname + "/public/html/triangle.html");
 })
 
 app.get('/flocon', function (req, res) {
