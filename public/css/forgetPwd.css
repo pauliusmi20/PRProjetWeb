@@ -32,7 +32,18 @@ background-attachment: fixed; /* Le fond restera fixe */
  font-size: 2.5em;
  color: purple;
 } 
-    
+
+#blockTxt2
+{
+ width: 20%;
+ position: absolute;
+ top: 25px;
+ left: auto;
+ text-shadow: 1px 1px cyan;
+ font-family: "Segoe Script", Arial, Sans-serif;
+ font-size: 4.5em;
+ color: yellow;
+} 
 
 #formu{
 
