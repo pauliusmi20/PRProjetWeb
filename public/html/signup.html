@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
 	<meta charset="UTF-8">
+	<title>Sign Up</title>
+
 	<link rel="stylesheet" href="../css/signup.css">
 	<script src="../css/index.js"></script>
 	
@@ -19,70 +22,101 @@
 	
 	<div class= "block main">
 		
-		<div id="blockImg">
-	
-			<!--<img  src="../images/Eu5U.gif" alt="" border="0" height="100%" width="100%">-->
-			<div  id="blockTxt2"> FraDant</div>
-    		<div id="blockTxt1">  please fill out the form below </div>
-    		
-    		
-    		<div id="formu">
-    		
-				<form>
-				
-					<h1>Sign Up</h1>
-					
-					
-					
-					Name : <br><input name="info" id="usr" placeholder="Ex : Radja" type="text" ><br>
-					
-					Surname : <br><input name="info" id="usr" placeholder="Ex : Mickunas" type="text"><br>
-					
-					E-mail : <br><input  id="mail" type="email" placeholder="  your@email.com " pattern=".+@.+..+" size="30" required><br>
-					
-					confirm e-mail : <br><input  id="mail" type="email" placeholder="  your@email.com " pattern=".+@.+..+" size="30" required><br>
-					
-					Phone number : <br><input  id="tel" placeholder="Ex : 06********" type="tel" ><br>
-					
-					Date of birth : <br><input  id="date" type="date"><br>
-					
-					Gender : <input name="gender" id="F"  type="radio">Female
-					<input name="gender" id="M"  type="radio">Male <br>
-					
-					Create password : <br><input  id="pwd" type="text" placeholder="********" minlenght="8" maxlenght="20" required><br>
-					
-					Confirm password : <br><input id="pwd" type="text" placeholder="********" minlenght="8" maxlenght="20" required><br>
-					
-					
-					accept the terms and conditions of our site : <input  id="Conditions" type="checkbox"><br>
-					accept to receive news from the site : <input  id="News" type="checkbox"><br>
-					
-					
-					<br><input  id="submit" value="Sign Up" type ="submit">
-					<input  id="return" value="Return" type ="button">
-					<div id="refresh"><a href="Refresh"> Refresh</a></div><br>
-					<!--<input type="button" onclick="refresh()" value="Rafraichir"/> <br/><br/>-->
+		<nav>
 
-				</form>
+			<div  id="logo"> <img src="../images/LOGO.png" width="700" height="300"></div>
+			
+			<ul>
 				
-    		</div> 
+				<li><a href="Home" ><i class="fas fa-home"></i> Home</a></li>
+				<li><a href="SignIn" ><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+				<li><a href="Informations" >Help <i class="fas fa-chevron-down"></i></a>
+					<ul>
+						<li><a href="Informations" >FAQ <i class="fas fa-question"></i></a></li>
+						<li><a href="Informations" >Who are we <i class="fas fa-question"></i></a></li>
+						<li><a href="Informations" >Contact Us </a></li>
+					</ul>
+				</li>
+
+			</ul>
+			
+		</nav>
+
+		
+	
+    	<div id="blockTxt1"> Please fill out the form below </div>
+    	<div id="blockTxt2"> Register to receive notifications by e-mail or by phone number each time there will be news in Fradant </div>
     		
-    		<div id="details">
     		
-    			<div id="propos" ><a href="">A propos de FraDant</div><br>
-    			<div id="contact" ><a href="">Nous contacter</div><br>
-    			<div id="facebook"><i class="fab fa-facebook-f fa-5x"></i></div>
-    			<div id="twetter"><i class="fab fa-twitter fa-5x"></i></div>
-    			<div id="instagram"><i class="fab fa-instagram fa-5x"></i></div>
+    	<div id="formu">
+    		
+			<form>
+				
+				<h1>Sign Up</h1>
+					
+					
+				<label for="name">*Enter your Name : </label>
+				<input class="info" name="info" id="name" placeholder="Ex : Radja" type="text" size="20" minlenght="8" maxlenght="20" required><br>
+				
+				<label for="surname">*Enter your Surname : </label>
+				<input class="info" name="info" id="surname" placeholder="Ex : Mickunas" type="text" size="20" minlenght="8" maxlenght="20" required><br>
+				
+				<label for="mail1">*Enter your e-mail : </label>
+				<input  class="info" id="mail1" type="email" placeholder="  your@email.com " pattern=".+@.+..+" size="30" required><br>
+				
+				<label for="mail2">*Confirm your e-mail : </label>	
+				<input  class="info" id="mail2" type="email" placeholder="  your@email.com " pattern=".+@.+..+" size="30" required><br>
+				
+				<label for="tel">Enter your phone number : </label>	
+				<input  class="info" id="tel" placeholder="Ex : 06********" type="tel" ><br>
+				
+
+				<label for="date">*Enter your Date of birth :</label>	
+				<input  class="info" id="date" type="date" required><br>
+				
+				<label for="F">*Enter your Gender :</label>
+				<input name="gender" id="F"  type="radio" required>Female
+				<input name="gender" id="M"  type="radio" required>Male <br>
+				
+				<label for="pwd1">*Create your password : </label>	
+				<input  class="info" id="pwd1" type="password" placeholder="********" minlenght="8" maxlenght="20" required><br>
+				
+				<label for="pwd2">*Confirm your password : </label>	
+				<input class="info" id="pwd2" type="password" placeholder="********" minlenght="8" maxlenght="20" required><br>
+					
+					
+				accept the terms and conditions of our site : <input  id="Conditions" type="checkbox"><br>
+				accept to receive news from the site : <input  id="News" type="checkbox"><br>
+					
+					
+				<br><input  class="info" id="submit" value="Sign Up" type ="submit">
+				<input  class="info" id="return" value="Return" type ="button">
+				<input  class="info" id="refresh" value="Refresh" type ="reset">
+
+			</form>
+				
+    	</div> 
+
+    		
+    	<div id="details">
+
+    		<select type="select" value="" id="Language">
+				<option value>-Language (English Default)-</option>
+				<option value="Sp">Spanish</option>
+				<option value="fr">Frensh</option>
+			</select>
+    		
+    		<div id="propos" ><a href="Informations">About FraDant</div><br>
+    		<div id="contact" ><a href="Informations">Contact us</div><br>
+    		<div id="facebook"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-5x"></i></div>
+    		<div id="twitter"><a href="https://www.twitter.com/"><i class="fab fa-twitter fa-5x"></i></div>
+    		<div id="instagram"><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-5x"></i></div>
     			
-    			<div id="hash"><i class="fas fa-hashtag fa-1x"></i>FractalsForEveryone</div>
+    		<div id="hash"><i class="fas fa-hashtag fa-1x"></i>FractalsForEveryone</div>
     			
-    		</div>
+    	</div>
     			
-		</div>
-		
-		
-		
+	
 	</div>	
 	
 </body>

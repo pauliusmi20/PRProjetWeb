@@ -2,82 +2,114 @@
 <html>
 
 <head>
+
 	<meta charset="UTF-8">
+	<title> Forget Password</title>
+
 	<link rel="stylesheet" href="../css/forgetPwd.css">
-	<script src="../css/index.js"></script>
+	<script src="../PRProjetWeb/index.js"></script>
 	
-	<link rel="stylesheet" href="style.css">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.min.js" type="text/javascript">
     </script>
     
 </head>
 
+
 <body>
 	
 	<div class= "block main">
-		
-		<div id="blockImg">
-	
-			<!--<img  src="../images/giphy(1).gif" alt="" border="0" height="100%" width="100%">-->
-    		<div  id="blockTxt2"> FraDant</div>
-    		<div id="blockTxt1"> Please answer this questionnaire so that we can confirm your identity </div>
-    		
-    		<div id="formu">
-    		
-				<form>
+
+		<nav>
+
+			<div  id="logo"> <img src="../images/LOGO.png" width="700" height="300"></div>
+			
+			<ul>
 				
-					<h1>Recover password</h1>
+				<li><a href="Home" ><i class="fas fa-home"></i> Home</a></li>
+				<li><a href="SignIn" ><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+				<li><a href="Signup" ><i class="fas fa-user-plus"></i> Sign Up</a></li>
+				<li><a href="Informations" >Help <i class="fas fa-chevron-down"></i></a>
+					<ul>
+						<li><a href="Informations" >FAQ <i class="fas fa-question"></i></a></li>
+						<li><a href="Informations" >Who are we <i class="fas fa-question"></i></a></li>
+						<li><a href="Informations" >Contact Us </a></li>
+					</ul>
+				</li>
+
+			</ul>
+			
+		</nav>
+		
+    	<div id="blockTxt1"> Please answer this questionnaire so that we can confirm your identity </div>
+    		
+    	<div id="formu">
+    		
+			<form>
+				
+				<h3>Recover password</h3>
 					
 					
+				<label for="name">Enter your name :</label>
+				<input class="info" name="info" id="name" placeholder="Ex : Radja" type="text" size="20" minlenght="8" maxlenght="20" required><br>
+				
+				<label for="surname">Enter your surname :</label>
+				<input class="info" name="info" id="surname" placeholder="Ex : Mickunas" type="text" size="20" minlenght="8" maxlenght="20" required><br>
+				
+				<label for="mail1">Enter your e-mail :</label>	
+				<input  class="info" id="mail1" type="email" placeholder="  your@email.com " pattern=".+@.+..+" size="30" required ><br>
+				
+				<label for="mail2">Confirm your e-mail :</label>	
+				<input class="info"  id="mail2" type="email" placeholder="  your@email.com " pattern=".+@.+..+" size="30" required><br>
+				
+				<label for="date">Enter your date of birth :</label>
+				<input class="info" id="date" type="date" required><br>
+				
+				<label for="F">Enter your Gender :</label>	
+				<input name="gender" id="F"  type="radio">Female
+				<input name="gender" id="M"  type="radio">Male <br>
+				
+				<label for="pwd1">Enter the last used password you remember : </label>	
+				<input class="info" id="pwd1" type="text" placeholder="********" required minlenght="8" maxlenght="20" ><br>
+				
+				<label for="pwd2">Confirm the last used password you remember : </label>
+				<input class="info" id="pwd2" type="text" placeholder="********" required minlenght="8" maxlenght="20" ><br>
 					
-					Enter your Name : <br><input name="info" id="usr" placeholder="Ex : Radja" type="text" ><br>
-					
-					Enter your Surname : <br><input name="info" id="usr" placeholder="Ex : Mickunas" type="text"><br>
-					
-					Enter your e-mail : <br><input  id="mail" type="email" placeholder="  your@email.com " pattern=".+@.+..+" size="30" required ><br>
-					
-					confirm e-mail : <br><input   id="mail" type="email" placeholder="  your@email.com " pattern=".+@.+..+" size="30" required><br>
-					
-					Date of birth : <br><input  id="date" type="date"><br>
-					
-					Gender : <input name="gender" id="F"  type="radio">Female
-					<input name="gender" id="M"  type="radio">Male <br>
-					
-					Enter the last used password you remember : <br><input  id="pwd" type="text" placeholder="********" minlenght="8" maxlenght="20" required><br>
-					
-					Confirm password : <br><input id="pwd" type="text" placeholder="********" minlenght="8" maxlenght="20" required><br>
+				<label for="Affirm">Affirm that you are the person concerned : </label>	
+				<input name="info" id="Affirm" type="checkbox"><br>
 					
 					
-					affirm that you are the person concerned : <input name="info" id="pwd" type="checkbox"><br>
-					
-					
-					<br><input  id="submit" value="Recover" type ="submit">
-					<input  id="return" value="Return" type ="button">
-					<input  id="refresh" value="Refresh" type ="button">
+				<br><input  class="info" id="submit" value="Recover" type ="submit">
+				<input  class="info" id="return" value="Return" type ="button">
+				<input  class="info" id="refresh" value="Refresh" type ="reset">
 
 				</form>
 				
-    		</div> 
+    	</div> 
     		
-    		<div id="details">
+    	<div id="details">
+
+    		<select type="select" value="" id="Language">
+				<option value>-Language (English Default)-</option>
+				<option value="Sp">Spanish</option>
+				<option value="fr">Frensh</option>
+			</select>
     		
-    			<div id="propos" ><a href="">A propos de FraDant</div><br>
-    			<div id="contact" ><a href="">Nous contacter</div><br>
-    			<div id="facebook"><i class="fab fa-facebook-f fa-5x"></i></div>
-    			<div id="twetter"><i class="fab fa-twitter fa-5x"></i></div>
-    			<div id="instagram"><i class="fab fa-instagram fa-5x"></i></div>
+    		<div id="propos" ><a href="Informations">About FraDant</div><br>
+    		<div id="contact" ><a href="Informations">Contact us</div><br>
+    		<div id="facebook"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-5x"></i></div>
+    		<div id="twitter"><a href="https://www.twitter.com/"><i class="fab fa-twitter fa-5x"></i></div>
+    		<div id="instagram"><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-5x"></i></div>
     			
-    			<div id="hash"><i class="fas fa-hashtag fa-1x"></i>FractalsForEveryone</div>
+    		<div id="hash"><i class="fas fa-hashtag fa-1x"></i>FractalsForEveryone</div>
     			
-    		</div>
+    	</div>
     		
     			
-		</div>
+	</div>
 		
-		
-		
-	</div>	
+
 	
 </body>
 

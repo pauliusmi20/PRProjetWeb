@@ -1,0 +1,336 @@
+body{
+
+	background-image: url(../images/colorful.gif) ;
+	background-attachment: fixed;
+	padding: 0;
+	margin: 0;
+
+}
+
+
+#logo
+{
+	left: -10%;
+    top: ;
+    width: 700px;
+    height: 300px;
+    position: relative;
+} 
+
+nav{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+ul {
+	right: 0px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	width: 100%;	
+}
+
+ul li{
+
+	float: left;
+	width: 28%;
+	height: 10%;
+	background-color: purple;
+	opacity: .8;
+	line-height: 40px;
+	text-align: center;
+	font-size: 15px;
+	margin-left: 15px;
+	letter-spacing: 2px;
+}
+
+ul li a{
+
+	 text-decoration: none;
+	 color: white;
+	 display: block;
+	 justify-content: flex-end;
+}
+
+ul li a:hover{
+
+	background-color: green;
+}
+
+ul li ul li{
+
+	display: none;
+	letter-spacing: 2px;
+	
+}
+
+ul li:hover ul li {
+
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.Search{
+	text-align: center;
+}
+
+.Search form{
+
+	position:absolute;
+	top: 100%;
+	left:15%;
+	padding: 0px;
+	margin: 0px;
+	width: 1000px ;
+	height: 100px;
+	
+}
+
+.Search form select{
+
+	background-color: gray ;
+	border:none;
+	height: 80px;
+	width: 500px;
+	outline: none;
+	font-size: 20px;
+	box-shadow:  -15px 15px 20px 15px rgba(30, 50, 80, 0.4) ;
+	
+}
+
+.Search form select:hover,.Search form input:hover{
+
+	background-color: purple;
+	border:none;
+	outline: none;
+	font-size: 20px;
+	box-shadow:  -15px 15px 20px 15px rgba(80, 50, 50, 0.4) ;
+	transition: 2s;
+	
+}
+
+.Search input{
+
+	background-color: gray ;
+	border:none;
+	height: 80px;
+	width: 200px;
+	outline: none;
+	padding:;
+	font-size: 15px;
+	text-align: center;
+	box-shadow:  0px 15px 20px 15px rgba(30, 50, 80, 0.4) ;
+}
+
+#blocktext1{
+
+	width: 100%;
+	color: white;
+	font-size: 8em;
+	font-family: Brush Script MT;
+	font-weight: 900;
+	text-align: center;
+	letter-spacing: 3px;
+	animation: text 3s 1;
+}
+
+#blocktext2{
+
+	color: purple;
+	font-size: 2em;
+	font-family: Apple Chancery, cursive;
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: 300;
+}
+
+#use{
+
+	position: absolute;
+	top: 65%;
+	font-family: Bradley Hand, cursive;
+	font-size: 2em;
+	text-align: center;
+	width: 100%;
+	box-shadow:  15px 0px 20px 15px rgba(30, 50, 80, 0.4) ;
+	border: 2px white;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+	
+}
+
+#use a{
+
+	text-decoration: none;	
+	left: 10%;
+	color: white;	
+	animation: slidein 3s 1;
+}
+
+#use a:hover{
+
+	text-decoration: none;	
+	left: 10%;	
+	color: blue ;
+
+}
+
+#blocktext3{
+
+	position: absolute;
+	top: 90%;
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: Apple Chancery, cursive;
+	font-size: 1.5em;
+	width: 100%;
+}
+
+
+
+#blocktext4{
+
+	position: absolute;
+	top: 120%;
+	left: 10%;
+	display: flex;
+	color: white;
+	font-size: 1.5em;
+	font-family: sans-serif;
+}
+
+#Language{
+
+ position: absolute;
+ top: 150%;
+ left: 45%;
+ font-size: 1em;
+ background-color: gray;
+ box-shadow:  -8px 8px 15px 8px rgba(30, 50, 80, 0.4) ;
+
+}
+
+
+#propos{
+
+ position: absolute;
+ top: 135%;
+ left: 10%;
+ font-size: 1.5em;
+
+
+}
+
+#contact{
+
+ position: absolute;
+ top: 140%;
+ left: 10%;
+ font-size: 1.5em;
+
+
+}
+
+#facebook a{
+ color: blue;
+ position: absolute;
+ top: 140%;
+ left: 70%;
+
+}
+
+#twitter a{
+ color: rgb(29,161,242);
+ position: absolute;
+ top: 140%;
+ left: 80%;
+
+}
+
+
+#instagram a{
+ color: brown;
+ position: absolute;
+ top: 140%;
+ left: 90%;
+
+}
+
+
+#hash{
+	
+ position: absolute;
+ top: 150%;
+ left: 10%;
+ font-size: 2.5em;
+ color: pink;
+
+}
+
+a {
+ color: purple;
+ text-decoration: underline;
+}
+
+@keyframes text{
+	0%{
+		margin-bottom: -50%;
+	}
+
+	30%{
+		letter-spacing: 15px;
+		margin-bottom: -40px;
+	}
+
+	85%{
+		letter-spacing: 8px;
+		margin-bottom: 20px;
+	}
+}
+
+@keyframes slidein {
+
+  from {
+
+    margin-left: -100%;
+    width: 30%;
+    
+  }
+
+  to {
+
+    margin-left: 0%;
+    width: 100%;
+    
+  }
+
+}
+
+@keyframes slideout {
+
+  from {
+
+    margin-left: 100%;
+    margin-top: -100%;
+
+    
+  }
+
+  to {
+
+  	margin-left: 0%;
+    margin-top: 0%
+    
+  }
+
+ }

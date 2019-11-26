@@ -1,65 +1,124 @@
 body {
-background-image: url("../images/giphy(1).gif");
+background-image: url("../images/colorful.gif");
 background-attachment: fixed; /* Le fond restera fixe */
 }
 
-#blockImg
+#logo
 {
- position: relative;
- width: 100%;
- text-align: center;
- vertical-align: top;
- font-size:13px;
+  left: -10%;
+  width: 700px;
+  height: 300px;
+  position: relative;
+} 
+
+nav{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
+ul {
+  right: 0px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 100%;  
+}
 
-#blockImg p {
+ul li{
 
-    width: 100%;
-    margin : auto;
-    z-index: 200;
+  float: left;
+  width: 20%;
+  height: 10%;
+  background-color: purple;
+  opacity: .8;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
+  margin-left: 15px;
+  letter-spacing: 2px;
+}
+
+ul li a{
+
+   text-decoration: none;
+   color: white;
+   display: block;
+   justify-content: flex-end;
+}
+
+ul li a:hover{
+
+  background-color: green;
+}
+
+ul li ul li{
+
+  display: none;
+  letter-spacing: 2px;
+  
+}
+
+ul li:hover ul li {
+
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 0px;
+  padding: 0px;
 }
 
 #blockTxt1
 {
- width: 50%;
+ width: 40%;
  position: absolute;
- top: 25px;
- left: 25%;
+ top: 60%;
+ left: 0%;
  text-shadow: 1px 1px cyan;
  text-align: center;
  font-family: "Segoe Script", Arial, Sans-serif;
  font-size: 2.5em;
- color: purple;
+ color: white;
+ animation: slideout 2s 1;
 } 
 
-#blockTxt2
-{
- width: 20%;
- position: absolute;
- top: 25px;
- left: auto;
- text-shadow: 1px 1px cyan;
- font-family: "Segoe Script", Arial, Sans-serif;
- font-size: 4.5em;
- color: yellow;
-} 
+label{
+
+  display: inline-block;
+  min-width: 50%;
+  margin-bottom: 20px;
+  padding: 0;
+}
 
 #formu{
 
  width: 50%;
  position: absolute;
- top: 500%;
- left: 25%;
+ top: 40%;
+ left: 45%;
  text-align: center;
  font-family: Verdana, Arial, Sans-serif;
  font-size: 1.5em;
  color: white;
- box-shadow:  15px -15px 20px 15px rgba(20, 10, 10, 0.9) ;
+ box-shadow:  -15px 15px 20px 15px rgba(20, 30, 30, 0.9) ;
+ animation: slidein 3s 1;
+ border: 2px solid black;
+ border-radius: 50px;
 
 
 }
 
+.info{
+
+	border: 1px solid black;
+	border-radius: 20px;
+	margin-bottom: 5px;
+	padding: 8px 12px;
+}
 
 #submit:hover
 {
@@ -95,9 +154,9 @@ background-attachment: fixed; /* Le fond restera fixe */
 #propos{
 
  position: absolute;
- top: 2300%;
+ top: 160%;
  left: 10%;
- font-size: 1.5em;
+ font-size: 2em;
 
 
 }
@@ -105,44 +164,56 @@ background-attachment: fixed; /* Le fond restera fixe */
 #contact{
 
  position: absolute;
- top: 2400%;
+ top: 170%;
  left: 10%;
- font-size: 1.5em;
+ font-size: 2em;
 
 
 }
 
-#facebook{
-
+#facebook a{
+ color: blue;
  position: absolute;
- top: 2400%;
- left: 60%;
-
-}
-
-#twetter{
-
- position: absolute;
- top: 2400%;
+ top: 180%;
  left: 70%;
 
+}
+
+#twitter a{
+ color: rgb(29,161,242);
+ position: absolute;
+ top: 180%;
+ left: 80%;
+
 
 }
 
-#instagram{
-	
+#instagram a{
+ color: brown;
  position: absolute;
- top: 2400%;
- left: 80%;
+ top: 180%;
+ left: 90%;
 
 }
 
 #hash{
-	
+
+ color: pink;
  position: absolute;
- top: 2600%;
+ top: 180%;
  left: 10%;
  font-size: 2.5em;
+
+}
+
+#Language{
+
+ position: absolute;
+ top: 200%;
+ left: 45%;
+ font-size: 1em;
+ background-color: gray;
+ box-shadow: -8px 8px 15px 8px rgba(30, 50, 80, 0.4) ;
 
 }
 
@@ -150,5 +221,58 @@ a {
 
  color: white;
  text-decoration: underline;
+}
+
+@keyframes text{
+  0%{
+    margin-bottom: -40%;
+  }
+
+  30%{
+    letter-spacing: 40px;
+    margin-bottom: -40px;
+  }
+
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+@keyframes slidein {
+
+  from {
+
+    margin-left: 100%;
+    width: 50%;
+    
+  }
+
+  to {
+
+    margin-left: 0%;
+    width: 50%;
+    
+  }
+
+}
+
+@keyframes slideout {
+
+  from {
+
+    margin-left: -100%;
+    margin-top: -100%;
+
+    
+  }
+
+  to {
+
+    margin-left: 0%;
+    margin-top: 0%
+    
+  }
+
 }
 
