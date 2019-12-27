@@ -39,8 +39,8 @@ function drawLine(a){
     		ctx.moveTo(a.p1.x , a.p1.y); 
     		ctx.lineTo(a.p2.x , a.p2.y);
     		ctx.stroke();
-    	}
 }
+
 
 function getListSmallerLines(a){
 	var res=[];

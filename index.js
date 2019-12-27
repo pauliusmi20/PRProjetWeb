@@ -1,5 +1,6 @@
 const express = require('express');
 const hbs = require('express-handlebars');
+
 const app = express();
 
 
@@ -32,11 +33,6 @@ app.get('/SignIn', function (req, res) {
 
 
 
-
-
-
-
-
 app.get('/forgetPwd', function (req, res) {
   res.sendFile(__dirname + "/public/html/forgetPwd.html");
 })
@@ -52,6 +48,9 @@ app.get('/tree', function (req, res) {
 app.get('/triangle', function (req, res) {
   res.sendFile(__dirname + "/public/html/triangle.html");
 })
+
+
+
 
 app.get('/flocon', function (req, res) {
   res.sendFile(__dirname + "/public/html/flocon.html");

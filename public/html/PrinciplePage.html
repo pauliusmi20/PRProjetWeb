@@ -63,15 +63,15 @@
 
 			<div id="blocktext3">You want to try ? Have fun !!</div>
 
-			<form>
+			<form action="/Home">
 
-				<select type="select" value="" id="search">
-					<option value>-Select the Fractal you want to try to build-</option>
-					<option value="Koch"><a href="">Koch</option>
-					<option value="flocon de neige"><a href="">flocon de neige</option>
-					<option value="Triangle de Sierpenski"><a href="">Triangle de Sierpenski</option>
+				<select type="select" id="search">
+					<option >-Select the Fractal you want to try to build-</option>
+					<option value="Koch" formaction="/elsewhere">Koch</option>
+					<option value="flocon" formaction="/flocon">flocon de neige</option>
+					<option value="/triangle" formaction="triangle">Triangle de Sierpenski</option>
 
-				</select>
+				</select>	
 
 				<input type="submit" value="TRY">
 
