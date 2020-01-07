@@ -1,16 +1,16 @@
 {
-  "name": "PRProjetWeb",
+  "name": "fradant",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pauliusmi20/PRProjetWeb.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Paulius and Radja eleves en Dant",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pauliusmi20/PRProjetWeb/issues"
@@ -18,8 +18,6 @@
   "homepage": "https://github.com/pauliusmi20/PRProjetWeb#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "nodemon": "^1.19.3"
-  },
-  "description": ""
+    "express-handlebars": "^3.1.0"
+  }
 }

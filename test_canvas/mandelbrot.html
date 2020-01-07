@@ -1,8 +1,38 @@
 <!DOCTYPE html>
 <head>
-	<script src="mandelbrot.js"	></script>
+
 </head>
 <html>
-    <body onload="draw();">
+    <body onchange="draw();">
+
+	   	<div id="putcanvas"></div>
+	   	<div id="palette">
+	   		
+	   		<div class="">
+		   		<p>Selectionner la taille</p>
+		   		<input type="text", id="width" value="600"> 
+	   			<input type="text" id="height" value="600">
+	   			<button onclick="createCanvas();"> Create Canvas</button>
+	   		</div>
+	   		<div class="">
+	   			<p>Iterations(precision + performance)</p>
+  				<input type="range" id="iterations" min="0" max="500" value="100" >
+	   			<p>PanX</p>
+  				<input type="range" id="panX" min="100" max="300" value="200" >
+	   			<p>PanY</p>
+  				<input type="range" id="panY" min="0" max="300" value="150" >
+	   			<p>Amplification</p>
+	   			<input type="range" id="facteur" min="0" max="40000" value="200" >
+	   			<p>Couleur</p>
+	   			<input type="range" id="couleur" min="0" max="360" value="0" >
+	   		</div>
+	   	<button onclick="draw();">Draw</button>
+		<button onclick="reset();"> Reset</button>
+	   	</div>
+
+
+	<script src="main.js"	></script>
+	<script src="mandelbrot.js"	></script>
+
     </body>
 </html>

@@ -1,65 +1,28 @@
 const express = require('express');
 const hbs = require('express-handlebars');
-
+//contient le module pour les pages de début et les formes d'inscription, renvoie html au client
+const listeningSendsHtml = require('./startCommands.js');
+//initi le module express
 const app = express();
 
+//<script src="../p5.min.js"></script>
 
 app.use(express.static('public'));
 
-app.engine('hbs', hbs({
+app.engine( 'hbs', hbs( {
+  defaultLayout: 'main',
   extname: 'hbs',
-  defaultLayout: 'PrinciplePage',
-  layoutsDir: __dirname + '/views/',
+  defaultView: 'default',
+  layoutsDir: __dirname + '/views/layouts',
+  partialsDir: __dirname + '/views/partials'
 }));
 
 app.set('view engine', 'hbs');
 
-
-app.get('/Informations', function (req, res) {
-  res.sendFile(__dirname + "/public/html/Informations.html");
-})
-
-app.get('/signup', function (req, res) {
-  res.sendFile(__dirname + "/public/html/signup.html");
-})
-
-app.get('/Home', function (req, res) {
-  res.sendFile(__dirname + "/public/html/PrinciplePage.html");
-})
-
-app.get('/SignIn', function (req, res) {
-  res.sendFile(__dirname + "/public/html/index.html");
-})
-
-
-
-app.get('/forgetPwd', function (req, res) {
-  res.sendFile(__dirname + "/public/html/forgetPwd.html");
-})
-
-app.get('/return', function (req, res) {
-  res.sendFile(__dirname + "/public/html/index.html");
-})
-
-app.get('/tree', function (req, res) {
-  res.sendFile(__dirname + "/public/html/tree.html");
-})
-
-app.get('/triangle', function (req, res) {
-  res.sendFile(__dirname + "/public/html/triangle.html");
-})
-
-
-
-
-app.get('/flocon', function (req, res) {
-  res.sendFile(__dirname + "/public/html/flocon.html");
-})
-
-
-
-
-
+listeningSendsHtml(app);
+/*
+app.post('/login', , )
+*/
 
 app.get('/*', function (req, res) {
   res.sendFile(__dirname + "/public/html/PrinciplePage.html");

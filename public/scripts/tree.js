@@ -9,7 +9,7 @@ function draw(startX, startY, len, angle) {
    ctx.save();
   
    ctx.translate(startX, startY);
-    ctx.rotate(angle * Math.PI/180);
+  ctx.rotate(angle * Math.PI/180);
    ctx.moveTo(0, 0);
    ctx.lineTo(0, -len);
    ctx.stroke();
