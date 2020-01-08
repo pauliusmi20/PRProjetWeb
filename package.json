@@ -2,9 +2,10 @@
   "name": "fradant",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "start": "nodemon app.js",
+    "cmd": "git add -A && git commit -m 'm' && git push"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,15 @@
   },
   "homepage": "https://github.com/pauliusmi20/PRProjetWeb#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0"
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "mongodb": "^3.4.1",
+    "mongoose": "^4.13.20",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "url": "^0.11.0"
   }
 }

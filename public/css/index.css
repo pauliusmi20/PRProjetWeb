@@ -75,6 +75,7 @@ ul li:hover ul li {
 
 #blockTxt1
 {
+  padding-top: 50px; 
  width: 100%;
  position: absolute;
  top: 30%;
