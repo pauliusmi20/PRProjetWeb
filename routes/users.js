@@ -10,9 +10,8 @@ router.get('/Dashboard', (req, res) =>{
 	res.render( 'palette.hbs',{ user :'FREE'});
 } );
 */
-router.get('/Dashboard:id', (req, res) =>{
-	console.log(id);
-	res.render( 'palette.hbs',{ user :'Paulius', navbar: 'navigationbar' , socialmedia : 'socialmedia'});
+router.get('/Dashboard', (req, res) =>{
+	res.render( 'palette.hbs',{ user :'Paulius'});
 } );
 
 
@@ -29,14 +28,14 @@ router.get('/register', function (req, res) {
 //post de nouvelle utilisateur
 router.post('/register', (req, res) =>{
 	console.log(req.body);
-	const {name , email, password } = req.body;
+	const {name , email, password1, password2 } = req.body;
 	let errors = []
 
-	if (password[1] !== password[2]){
+	if (password1!== password2){
 		errors.push({msg: 'Passwords do not match'})
 	}
 
-	if (password[1].length < 6){
+	if (password1.length < 6){
 		errors.push({msg: 'Passwords too short'})
 	}
 

@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../scripts/style.css">
     <meta charset="utf-8">  
     <script src="../scripts/complex.js"></script>
-    <script src="../scripts/sketch.js"></script>
+
 	<script src="../scripts/{{src}}"></script>
 	 <script src="../scripts/ajax-request.js"></script>
  	<link rel="stylesheet" href="../css/index.css">
@@ -17,10 +17,45 @@
 
 	<title> Have fun exploring {{user}}</title>
 	<body>
+        <nav>
+            <div  id="logo"> <img src="../images/LOGO.png" width="700" height="300"></div>
+                <ul>
+                
+                    <li><a href="Home" ><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="SignIn" ><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+                    <li><a href="Informations" >Help <i class="fas fa-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="Informations" >FAQ <i class="fas fa-question"></i></a></li>
+                            <li><a href="Informations" >Who are we <i class="fas fa-question"></i></a></li>
+                            <li><a href="Informations" >Contact Us </a></li>
+                        </ul>
+                    </li>
+                </ul>     
+        </nav> 
     <div class="" id="display">
+  
 		{{{body}}}
     </div>
+
+        <div id="details">
+
+            <select type="select" value="" id="Language">
+                <option value>-Language (English Default)-</option>
+                <option value="Sp">Spanish</option>
+                <option value="fr">Frensh</option>
+            </select>
+            
+            <div id="propos" ><a href="Informations">About FraDant</div><br>
+            <div id="contact" ><a href="Informations">Contact us</div><br>
+            <div id="facebook"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-5x"></i></div>
+            <div id="twitter"><a href="https://www.twitter.com/"><i class="fab fa-twitter fa-5x"></i></div>
+            <div id="instagram"><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-5x"></i></div>
+                
+            <div id="hash"><i class="fas fa-hashtag fa-1x"></i>FractalsForEveryone</div>
+                
+        </div>
 	
+
     </body>
 
 </html>

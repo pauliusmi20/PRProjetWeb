@@ -1,11 +1,71 @@
-
 <div class="" id="param-css"></div>
 
+<nav class="menu">
+  <ul>
+    <li><a href="Accueil">Save image to server</a></li>
+    <li><a href="Apropos"></a></li>
+    <li><a href="Contact">send image via mail </a></li>
+    <li><a href="">view saved images</a></li>
+    <li><a href="">log out </a></li>
+  </ul>
+</nav>
+<div class="menu">
+	<div id="window-size">
+		<div class="box">
+			<label for="xsize"> width?</label>
+			<input name="xsize" type="text/numbers">			
+		</div>
+		<div class="box">
+			<label for="ysize"> height?</label>
+			<input name="ysize" type="text/numbers">
+					
+		</div>	
+		<div id="back" class="box">
+			<button name="go-back">go Back</button>		
+		</div>	
+			<button onclick="reset();" name="reset">Reset</button>		
+		</div>	
+	</div>
+	<div id="inputs">
+		<input type="range">
+	</div>
+</div>
+
+  <script src="../scripts/mandelbrot.js"></script>
+
 <style>
-
-canvas {
-
+/*
+body{
+	display: flex;
+	flex-direction: column;
+}
+canvas  .pallet {
+	flex-direction: column;
 } 
+
+#window-size{
+	background-color: orange;
+	height: 300px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+*/
+.box{
+	color: white;
+	font-style: normal;
+	font-size: 16px;
+	font-family: Tahoma,Arial;
+	font-weight: normal;
+	text-align: center;
+	line-height: 150%;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+
+}
+/*
 #param-css{
 	color: #ffffff;
 	font-style: normal;
@@ -16,5 +76,10 @@ canvas {
 	text-justify: inter-word;
 	line-height: 150%;
 }	
-
+*/
+#diplays{
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;}
 </style>
+
