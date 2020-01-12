@@ -126,7 +126,7 @@ label{
  font-family: Verdana, Arial, Sans-serif;
  font-size: 1.5em;
  color: white;
- box-shadow:  -15px 15px 20px 15px rgba(10, 50, 80, 0.3)  ;
+ box-shadow: 8px 5px 12px 5px purple;
  animation: slidein 3s 1;
  border: 2px solid black;
  border-radius: 50px;
@@ -231,7 +231,7 @@ label{
 #Language{
 
  position: absolute;
- top: 180%;
+ top: 190%;
  left: 20%;
  font-size: 1em;
  background-color: gray;

@@ -1,6 +1,7 @@
 body {
 background-image: url("../images/colorful.gif");
 background-attachment: fixed; /* Le fond restera fixe */
+
 }
 
 #logo
@@ -32,7 +33,7 @@ ul {
 ul li{
 
   float: left;
-  width: 20%;
+  width: 28%;
   height: 10%;
   background-color: purple;
   opacity: .8;
@@ -74,18 +75,17 @@ ul li:hover ul li {
 
 #blockTxt1
 {
- width: 40%;
+ width: 100%;
  position: absolute;
- top: 60%;
- left: 0%;
- text-shadow: 1px 1px cyan;
+ top: 30%;
  text-align: center;
- font-family: "Segoe Script", Arial, Sans-serif;
- font-size: 2.5em;
+ font-family: Brush Script MT;
+ font-size: 4.5em;
  color: white;
- animation: slideout 2s 1;
-} 
+ animation: slideout 3s 1;
 
+}
+ 
 label{
 
   display: inline-block;
@@ -96,44 +96,53 @@ label{
 
 #formu{
 
- width: 50%;
+ width: 35%;
  position: absolute;
- top: 40%;
- left: 45%;
+ top: 50%;
+ left: 35%;
  text-align: center;
  font-family: Verdana, Arial, Sans-serif;
  font-size: 1.5em;
  color: white;
- box-shadow: 8px 5px 12px 5px purple;
+ box-shadow:  -15px 15px 20px 15px rgba(20, 30, 50, 0.4);
  animation: slidein 3s 1;
  border: 2px solid black;
  border-radius: 50px;
 
-
 }
 
-.info{
-
-	border: 1px solid black;
-	border-radius: 20px;
-	margin-bottom: 5px;
-	padding: 8px 12px;
+#submit{
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin-bottom: 20px;
 }
-
 #submit:hover
 {
  border: 2px solid black;
  background-color: gray;
+ padding: 10px 30px;
 }
 
+#usr{
+  border-radius: 50px;
+  padding: 10px 10px;
+  box-shadow:  15px 15px 20px 15px rgba(20, 10, 10, 0.9) ;
+}
+
+#pwd{
+  border-radius: 50px;
+  padding: 10px 10px;
+  box-shadow:  15px 15px 20px 15px rgba(20, 10, 10, 0.9) ;
+}
 #frgPwd
 {
 	color: black;
+  
 }
 
 #frgPwd:hover
 {
- border: 2px solid gray;
+ border: 1px solid gray;
  color: gray;
  
 }
@@ -143,20 +152,20 @@ label{
 {
  color: white;
 
+
 }
 
 #signUp:hover
 {
- border: 2px solid gray;
- color: purple;
+ border: 1px solid gray;
 }
 
 #propos{
 
  position: absolute;
- top: 160%;
+ top: 120%;
  left: 10%;
- font-size: 2em;
+ font-size: 1.5em;
 
 
 }
@@ -164,9 +173,9 @@ label{
 #contact{
 
  position: absolute;
- top: 170%;
+ top: 130%;
  left: 10%;
- font-size: 2em;
+ font-size: 1.5em;
 
 
 }
@@ -174,33 +183,34 @@ label{
 #facebook a{
  color: blue;
  position: absolute;
- top: 180%;
+ top: 145%;
  left: 70%;
 
 }
 
 #twitter a{
+
  color: rgb(29,161,242);
  position: absolute;
- top: 180%;
+ top: 145%;
  left: 80%;
 
 
 }
 
 #instagram a{
+
  color: brown;
  position: absolute;
- top: 180%;
+ top: 145%;
  left: 90%;
 
 }
 
-#hash{
-
+#hash {
  color: pink;
  position: absolute;
- top: 180%;
+ top: 160%;
  left: 10%;
  font-size: 2.5em;
 
@@ -209,7 +219,7 @@ label{
 #Language{
 
  position: absolute;
- top: 200%;
+ top: 160%;
  left: 45%;
  font-size: 1em;
  background-color: gray;
@@ -244,14 +254,14 @@ a {
   from {
 
     margin-left: 100%;
-    width: 50%;
+    width: 35%;
     
   }
 
   to {
 
     margin-left: 0%;
-    width: 50%;
+    width: 35%;
     
   }
 
@@ -261,7 +271,7 @@ a {
 
   from {
 
-    margin-left: -100%;
+    margin-left: 100%;
     margin-top: -100%;
 
     
@@ -274,5 +284,8 @@ a {
     
   }
 
-}
+ }
+
+
+
 

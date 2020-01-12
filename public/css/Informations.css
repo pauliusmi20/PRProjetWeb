@@ -77,61 +77,85 @@ nav ul li:hover ul li {
 }
 
 #AboutFradant{
+	border-radius: 10%;
+	box-shadow:  8px 5px 12px 5px purple;
+	text-align: center;
+	padding: 0;
+    margin-left: 8%;
+    margin-top: 100px;
+	width: 60%;
+	color: white;
+	font-size: 2em;
+	font-family: Brush Script MT;
+	letter-spacing: 1px;
+	animation: slideout 3s 1;
+}
+
+#WhoAreWe{
+	border-radius: 10%;
+	box-shadow:  8px 5px 12px 5px purple;
 	padding: 0;
     margin-left: 120px;
     margin-top: 100px;
 	width: 50%;
 	color: white;
-	font-size: 18px;
+	font-size: 2em;
+	text-align: center;
+	font-family: Brush Script MT;
+	letter-spacing: 1px;
+	animation: slidein 3s 1;
+}
+
+t3{
+	color: blue;
+	font-size: 2em;
+
 }
 
 #ContactUs{
+	border-radius: 10%;
+	box-shadow:  8px 5px 12px 5px purple;
 	padding: 0;
-    margin-left: 150px;
-    margin-top: 100px;
+    margin-left: 65%;
+    margin-top: -65%;
+    width: 30%;
+    font-size: 1.5em;
+	font-family: Brush Script MT;
+	letter-spacing: 1px;
+	text-align: center;
+	animation: slidein 3s 1;
 }
+
 #ContactUs ul li{
  color: white;
- font-size: 18px;
 
+}
+
+#pic{
+	 margin-top: 50px;
+}
+
+#pic p{
+
+	font-size: 1em;
+	text-decoration: overline;
+	text-decoration-color: purple;
 }
 
 #Language{
 
  position: absolute;
- top: 150%;
- left: 45%;
+ top: 250%;
+ left: 75%;
  font-size: 1em;
  background-color: gray;
  box-shadow:  -8px 8px 15px 8px rgba(30, 50, 80, 0.4) ;
-
-}
-
-
-#propos{
-
- position: absolute;
- top: 135%;
- left: 10%;
- font-size: 1.5em;
-
-
-}
-
-#contact{
-
- position: absolute;
- top: 140%;
- left: 10%;
- font-size: 1.5em;
-
-
 }
 
 #facebook a{
  color: blue;
  position: absolute;
- top: 140%;
+ top: 225%;
  left: 70%;
 
 }
@@ -139,7 +163,7 @@ nav ul li:hover ul li {
 #twitter a{
  color: rgb(29,161,242);
  position: absolute;
- top: 140%;
+ top: 225%;
  left: 80%;
 
 }
@@ -148,7 +172,7 @@ nav ul li:hover ul li {
 #instagram a{
  color: brown;
  position: absolute;
- top: 140%;
+ top: 225%;
  left: 90%;
 
 }
@@ -157,7 +181,7 @@ nav ul li:hover ul li {
 #hash{
 	
  position: absolute;
- top: 150%;
+ top: 260%;
  left: 10%;
  font-size: 2.5em;
  color: pink;
@@ -169,36 +193,15 @@ a {
  text-decoration: underline;
 }
 
-@keyframes text{
-	0%{
-		margin-bottom: -50%;
-	}
-
-	30%{
-		letter-spacing: 15px;
-		margin-bottom: -40px;
-	}
-
-	85%{
-		letter-spacing: 8px;
-		margin-bottom: 20px;
-	}
-}
-
 @keyframes slidein {
 
   from {
 
-    margin-left: -100%;
-    width: 30%;
-    
+    margin-left: -100%;    
   }
 
   to {
-
-    margin-left: 0%;
-    width: 100%;
-    
+  	/*chacun a sa position*/
   }
 
 }
@@ -215,8 +218,8 @@ a {
 
   to {
 
-  	margin-left: 0%;
-    margin-top: 0%
+  	margin-left: 8%;
+    
     
   }
 
