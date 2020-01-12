@@ -10,7 +10,6 @@
   </ul>
 </nav>
 <div class="menu">
-	<div id="window-size">
 		<div class="box">
 			<label for="xsize"> width?</label>
 			<input name="xsize" type="text/numbers">			
@@ -23,12 +22,45 @@
 		<div id="back" class="box">
 			<button name="go-back">go Back</button>		
 		</div>	
+		<div>
 			<button onclick="reset();" name="reset">Reset</button>		
 		</div>	
-	</div>
-	<div id="inputs">
-		<input type="range">
-	</div>
+
+		  <button+></button>  
+		
+		<select name="colours" id="colours">
+			<option value="a" id="">pink-blue </option>
+			<option value="b" id="">b</option>
+			<option value="c" id="">c</option>
+			<option value="d" id="">d</option>
+			<option value="e" id="">e</option>
+			<option value="f" id="">f</option>
+			<option value="g" id="">g</option>
+		</select>
+		  <div class="box">
+		  	<<label value="100" for="iterations">ITERATIONS</label>
+		  	<input id="iterations" name="iterations"type="text/numbers"></input>
+		  		<label for="fractal">Select the fractal</label>
+		  	<select name="fractal" id="fractal" >
+		  		<option value="mandelbrot">mandelbrot</option>
+		  		<option value="julia">Julia set for fc, c = (φ − 2) + (φ − 1)i = −0.4 + 0.6i</option>
+		  		<option value="julia2">Julia set for f(c), c = 0.285 + 0i</option>
+		  		<option value="julia3">Julia set for fc, c = 0.285 + 0.01i</option>
+		  		<option value="julia4">Julia set for fc, c = 0.45 + 0.1428i</option>
+		  		<option value="julia5">Julia set for fc, c = −0.70176 − 0.3842i</option>
+		  		<option value="julia6">Julia set for fc, c = −0.835 − 0.2321i</option>
+		  		<option value="julia7">Julia set for fc, c = −0.8 + 0.156i</option>
+		  		<option value="julia8">Julia set for fc, c = −0.7269 + 0.1889i</option>
+		  		<option value="goldenratio">Filled Julia set for fc, c = 1 − φ, where φ is the golden ratio</option>
+		  		<option value="magicselect">MagicSelect</option>
+		  	</select>
+		  </div>
+		  <button onclick="clear();">Clear </button>
+
+		  <button onclick="zoomOut();">Zoom out </button>
+		<!--  <div class="box">
+		  	<input id="iterations "type="range" min="30", max="1000">
+		  </div> -->
 </div>
 
   <script src="../scripts/mandelbrot.js"></script>
@@ -77,6 +109,8 @@ canvas  .pallet {
 	line-height: 150%;
 }	
 */
+canvas{margin-left:500px;}
+.menu {display: flex; flex-direction: row,align-content: center; }
 #diplays{
 	display: flex;
 	flex-direction: row;

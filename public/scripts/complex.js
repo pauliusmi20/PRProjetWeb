@@ -19,8 +19,8 @@ class Complex {
   }
 
   addSelf(c) {
-    this.re += c.re
-    this.im += c.im
+    this.re += c.re;
+    this.im += c.im;
     return this
   }
 
