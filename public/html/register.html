@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="../css/signup.css">
 	<script src="../css/index.js"></script>
 	
-	<link rel="stylesheet" href="style.css">
+	<!-- <link rel="stylesheet" href="style.css"> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.min.js" type="text/javascript">
     </script>
@@ -29,12 +29,11 @@
 			<ul>
 				
 				<li><a href="Home" ><i class="fas fa-home"></i> Home</a></li>
-				<li><a href="SignIn" ><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
-				<li><a href="Informations" >Help <i class="fas fa-chevron-down"></i></a>
+				<li><a href="login" ><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+				<li><a href="faq" >Help <i class="fas fa-chevron-down"></i></a>
 					<ul>
-						<li><a href="Informations" >FAQ <i class="fas fa-question"></i></a></li>
-						<li><a href="Informations" >Who are we <i class="fas fa-question"></i></a></li>
-						<li><a href="Informations" >Contact Us </a></li>
+						<li><a href="faq" >Who are we <i class="fas fa-question"></i></a></li>
+						<li><a href="faq" >Contact Us </a></li>
 					</ul>
 				</li>
 
@@ -54,22 +53,35 @@
 				
 				<h1>Sign Up</h1>
 					
+					
+				<label for="name">Enter your Name : </label><br>
+				<input class="info" name="info" id="name" placeholder="Ex : Radja" type="text" size="20" minlenght="8" maxlenght="20" required><br>
 				
-				<label for="surname">*Enter your Username : </label>
+				<label for="surname">Enter your Surname : </label><br>
 				<input class="info" name="info" id="surname" placeholder="Ex : Mickunas" type="text" size="20" minlenght="8" maxlenght="20" required><br>
 				
-				<label for="mail1">*Enter your e-mail : </label>
+				<label for="mail1">Enter your e-mail : </label><br>
 				<input  class="info" id="mail1" type="email" placeholder="  your@email.com " pattern=".+@.+..+" size="30" required><br>
 				
-					<label for="F">*Enter your Gender :</label>
+				<label for="mail2">Confirm your e-mail : </label><br>
+				<input  class="info" id="mail2" type="email" placeholder="  your@email.com " pattern=".+@.+..+" size="30" required><br><br>
+				<!-- 
+				<label for="tel">Enter your phone number : </label>	
+				<input  class="info" id="tel" placeholder="Ex : 06********" type="tel" ><br> -->
+				
+
+				<label for="date">Enter your Date of birth :</label>
+				<input  class="info" id="date" type="date" required><br>
+				
+				<!-- <label for="F">Enter your Gender :</label>
 				<input name="gender" id="F"  type="radio" required>Female
-				<input name="gender" id="M"  type="radio" required>Male <br>
+				<input name="gender" id="M"  type="radio" required>Male <br> -->
 				
-				<label for="pwd1">*Create your password : </label>	
-				<input  name='password'class="info" id="pwd1" type="password" placeholder="********" minlenght="8" maxlenght="20" required><br>
+				<label for="pwd1">Create your password : </label><br>
+				<input  class="info" id="pwd1" type="password" placeholder="********" minlenght="8" maxlenght="20" required><br>
 				
-				<label for="pwd2">*Confirm your password : </label>	
-				<input name='password2'class="info" id="pwd2" type="password" placeholder="********" minlenght="8" maxlenght="20" required><br>
+				<label for="pwd2">Confirm your password : </label><br>
+				<input class="info" id="pwd2" type="password" placeholder="********" minlenght="8" maxlenght="20" required><br><br>
 					
 					
 				accept the terms and conditions of our site : <input  id="Conditions" type="checkbox"><br>
@@ -77,7 +89,6 @@
 					
 					
 				<br><input  class="info" id="submit" value="Sign Up" type ="submit">
-				<input  class="info" id="return" value="Return" type ="button">
 				<input  class="info" id="refresh" value="Refresh" type ="reset">
 
 			</form>
@@ -93,8 +104,8 @@
 				<option value="fr">Frensh</option>
 			</select>
     		
-    		<div id="propos" ><a href="Informations">About FraDant</div><br>
-    		<div id="contact" ><a href="Informations">Contact us</div><br>
+    		<div id="propos" ><a href="faq">About FraDant</div><br>
+    		<div id="contact" ><a href="faq">Contact us</div><br>
     		<div id="facebook"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-5x"></i></div>
     		<div id="twitter"><a href="https://www.twitter.com/"><i class="fab fa-twitter fa-5x"></i></div>
     		<div id="instagram"><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-5x"></i></div>
