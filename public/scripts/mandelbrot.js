@@ -1,7 +1,7 @@
 
 let toggle = false;
 let zoom = 2; ;
-let maxIterations = 50 ; //document.getElementById('maxIterations').value;
+let maxIterations = 250 ; //document.getElementById('maxIterations').value;
 let panX = 0; 
 let panY =0 ;
 //var colours = 'a' ; 
