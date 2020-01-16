@@ -1,35 +1,35 @@
 <div class="" id="param-css"></div>
 
-<nav class="menu">
+<nav class="menu1">
   <ul>
     <li><a href="Accueil">Save image to server</a></li>
-    <li><a href="Apropos"></a></li>
     <li><a href="Contact">send image via mail </a></li>
     <li><a href="">view saved images</a></li>
     <li><a href="">log out </a></li>
   </ul>
 </nav>
-<div class="menu">
+
+<div class="menu2">
 		<div class="box">
 			<label for="xsize"> width?</label>
 			<input name="xsize" type="text/numbers">			
 		</div>
+		
 		<div class="box">
 			<label for="ysize"> height?</label>
-			<input name="ysize" type="text/numbers">
-					
-		</div>	
+			<input name="ysize" type="text/numbers">		
+		</div>
+
 		<div id="back" class="box">
 			<button name="go-back">go Back</button>		
-		</div>	
-		<div>
-			<button onclick="reset();" name="reset">Reset</button>		
-		</div>	
+		</div>
 
-		  <button+></button>  
+		<div class="box">
+			<button onclick="reset();" name="reset">Reset</button>		
+		</div>	 
 		
 		<select name="colours" id="colours">
-			<option value="a" id="">pink-blue </option>
+			<option value="a" id="">pink-blue</option>
 			<option value="b" id="">b</option>
 			<option value="c" id="">c</option>
 			<option value="d" id="">d</option>
@@ -37,10 +37,12 @@
 			<option value="f" id="">f</option>
 			<option value="g" id="">g</option>
 		</select>
-		  <div class="box">
-		  	<<label value="100" for="iterations">ITERATIONS</label>
+
+		<div class="box">
+		  	<label value="100" for="iterations">ITERATIONS</label>
 		  	<input id="iterations" name="iterations"type="text/numbers"></input>
-		  		<label for="fractal">Select the fractal</label>
+
+		  	<label for="fractal">Select the fractal</label>
 		  	<select name="fractal" id="fractal" >
 		  		<option value="mandelbrot">mandelbrot</option>
 		  		<option value="julia">Julia set for fc, c = (φ − 2) + (φ − 1)i = −0.4 + 0.6i</option>
@@ -54,67 +56,99 @@
 		  		<option value="goldenratio">Filled Julia set for fc, c = 1 − φ, where φ is the golden ratio</option>
 		  		<option value="magicselect">MagicSelect</option>
 		  	</select>
-		  </div>
-		  <button onclick="clear();">Clear </button>
 
-		  <button onclick="zoomOut();">Zoom out </button>
-		<!--  <div class="box">
-		  	<input id="iterations "type="range" min="30", max="1000">
-		  </div> -->
+		  	<button onclick="clear();">Clear </button>
+			<button onclick="zoomOut();">Zoom out </button>
+			<!--  <div class="box"><input id="iterations "type="range" min="30", max="1000"></div> -->
+
+		</div>
+
+		  
 </div>
 
   <script src="../scripts/mandelbrot.js"></script>
 
 <style>
-/*
+
 body{
 	display: flex;
 	flex-direction: column;
 }
-canvas  .pallet {
+canvas .pallet {
 	flex-direction: column;
 
-} 
-
-#window-size{
-	background-color: orange;
-	height: 300px;
-	width: 300px;
-	display: flex;
-	flex-direction: column;
 }
-*/
+.menu1{
+	width: 50%;
+	list-style: none;
+	margin: 0;
+	margin-left: 60%;
+	padding: 0;
+}
+
+.menu1 ul{
+	right: 0px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	width: 50%;
+}
+
+
+.menu1 ul li{
+	width: 100%;
+	height: 20%;
+	background-color: purple;
+	opacity: .8;
+	line-height: 40px;
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: 5px;
+	letter-spacing: 2px;
+}
+
+.menu1 ul li a{
+
+	 text-decoration: none;
+	 color: white;
+}
+
+.menu1 ul li a:hover{
+
+	background-color: green;
+}
+
 .box{
 	color: white;
 	font-style: normal;
-	font-size: 16px;
+	font-size: 12px;
 	font-family: Tahoma,Arial;
 	font-weight: normal;
 	text-align: center;
 	line-height: 150%;
-	height: 100px;
-	width: 100px;
+	height: 50px;
 	display: flex;
 	flex-direction: column;
+	margin:0px;
 
 }
-/*
-#param-css{
-	color: #ffffff;
-	font-style: normal;
-	font-size: 16px;
-	font-family: Tahoma,Arial;
-	font-weight: normal;
-	text-align: left;
-	text-justify: inter-word;
-	line-height: 150%;
-}	
-*/
-canvas{margin-left:500px; width: 1200; < height: 1200;}
-.menu {display: flex; flex-direction: row,align-content: center; }
-#diplays{
-	display: flex;
-	flex-direction: row;
-	align-content: space-between;}
+
+.menu2{
+	width: 20%;
+	list-style: none;
+	margin-left: 77%;
+	margin-top: 2%;
+	padding: 0;
+}
+
+.menu2 #colours{
+	width:100%;
+	text-align:center;
+}
+
+.menu2 #fractal{
+	text-align:center;
+}
+
 </style>
 
