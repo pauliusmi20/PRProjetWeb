@@ -1,4 +1,4 @@
-
+let isZooming = false;
 let toggle = false;
 let zoom = 2; ;
 let maxIterations = 250 ; //document.getElementById('maxIterations').value;
@@ -64,7 +64,7 @@ return {
   }
 }
 function setup() {
-  createCanvas(500 ,500);
+  createCanvas(1000 ,1000);
   pixelDensity(1);
   background(0);
 }
@@ -126,6 +126,7 @@ function chooseConstant(type) {
         C = goldenratio;
   }
 }
+//fonction anonyme inutile
 ()=>{
   if (init){  
     let Ctemp =chooseConstant();
@@ -158,7 +159,7 @@ colourSelected.addEventListener('change', () =>{
 
 function draw() {
 
-  type =constantSelected;
+  type = constantSelected;
   if (type==="julia1"){
      C = julia1 ;
  }else if (type === "mandelbrot"){
@@ -192,21 +193,20 @@ function draw() {
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
       let Z = new Complex (map(x, 0, width, minX, maxX), map(y, 0, height, minY, maxY ) ) ;
-      if (toggle) C = Z.copy()
-
+      if (toggle) C = Z.copy();
       let bright = julia(Z, C);
       const c = palette(bright, colours);
       const index = (x + y * width) * 4;
       if (bright = 0){
-      pixels[index] = 255;
-      pixels[index + 1] = 255;
-      pixels[index + 2] = 255;
-      pixels[index + 3] = 255;  
+        pixels[index] = 255;
+        pixels[index + 1] = 255;
+        pixels[index + 2] = 255;
+        pixels[index + 3] = 255;  
       }else{
-      pixels[index] = c.r;
-      pixels[index + 1] = c.g;
-      pixels[index + 2] = c.b;
-      pixels[index + 3] = 255;  
+        pixels[index] = c.r;
+        pixels[index + 1] = c.g;
+        pixels[index + 2] = c.b;
+        pixels[index + 3] = 255;  
       }
       
     }
@@ -216,7 +216,6 @@ function draw() {
 
 function mousePressed() {
  // toggle = !toggle
- // loop()
   panX = map(mouseX, 0, width, minX , maxX);
   panY = map(mouseY, 0, height,  minY, maxY);
   minX= (minX + panX )/zoom;
@@ -242,11 +241,18 @@ function zoomOut(){
   minY*=zoom;
   maxY*=zoom;
 }
-
+//on remet à zero
 function reset (){
   minX= -2.5;
   maxX=2;
   minY=-1;
   maxY=2.5;
 }
+//sauvegarde l'image
+function saveImage(){
+  let canvas = document.getElementById('defaultCanvas0');
+  let image = canvas.toDataURL("image/png");//.replace("image/png", "image/octet-stream");  // here is the most important part because if you dont replace you will get a DOM 18 exception.
+  window.location.href=image;
+}
+
 
