@@ -156,6 +156,9 @@ colourSelected.addEventListener('change', () =>{
 
 });
 
+document.getElementById('iterations').addEventListener('change', ()=>{
+  maxIterations = document.getElementById('iterations').value;
+});
 
 function draw() {
 

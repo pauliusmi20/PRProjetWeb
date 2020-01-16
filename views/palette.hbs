@@ -2,24 +2,14 @@
 
 <nav class="menu1">
   <ul>
-    <li><a href="Accueil">Save image to server</a></li>
+    <li><a onclick="saveImage();">export Image</a></li>
     <li><a href="Contact">send image via mail </a></li>
     <li><a href="">view saved images</a></li>
     <li><a href="">log out </a></li>
   </ul>
-</nav>
+</nav>on
 
 <div class="menu2">
-		<div class="box">
-			<label for="xsize"> width?</label>
-			<input name="xsize" type="text/numbers">			
-		</div>
-		
-		<div class="box">
-			<label for="ysize"> height?</label>
-			<input name="ysize" type="text/numbers">		
-		</div>
-
 		<div id="back" class="box">
 			<button name="go-back">go Back</button>		
 		</div>
@@ -28,14 +18,12 @@
 			<button onclick="reset();" name="reset">Reset</button>		
 		</div>	 
 		
-		<select name="colours" id="colours">
+		<select onchange='reset();'name="colours" id="colours">
 			<option value="a" id="">pink-blue</option>
-			<option value="b" id="">b</option>
-			<option value="c" id="">c</option>
-			<option value="d" id="">d</option>
-			<option value="e" id="">e</option>
-			<option value="f" id="">f</option>
-			<option value="g" id="">g</option>
+			<option value="c" id="">blue-red</option>
+			<option value="d" id="">yellow-light green</option>
+			<option value="e" id="">light-pink-yellow</option>
+			<option value="g" id="">red-orange</option>
 		</select>
 
 		<div class="box">
@@ -77,6 +65,11 @@ body{
 canvas .pallet {
 	flex-direction: column;
 
+}
+canvas 
+{
+ margin-top: 30px;
+  margin-bottom: 30px;
 }
 .menu1{
 	width: 50%;
