@@ -84,6 +84,7 @@ function setup() {
 */
 const gr = (1 + Math.sqrt(5))/2; // nombre d'or 
 const julia1 = new Complex(0.285,0) ; 
+
 const julia2 = new Complex(0.285,0) ; 
 const julia3 = new  Complex(0.285 , 0.01);
 const julia4 = new Complex( 0.45, 0.1428)  ; 
@@ -122,7 +123,7 @@ function chooseConstant(type) {
          C = julia8;
   }else if  (type==="goldenratio"){
        toggle=false;
-        C = julia9;
+        C = goldenratio;
   }
 }
 ()=>{
@@ -224,9 +225,6 @@ function mousePressed() {
   maxY= (maxY + panY )/zoom;
 }
 
-function mouseMoved() {
-  loop()
-}
 
 function julia(Z, C) {
   let bright = 0

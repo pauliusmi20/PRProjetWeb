@@ -9,16 +9,10 @@ var url = require('url');
 //router.post('/Dashboard')
 
 
+//post de nouvelle utilisateur
 
+module.exports=router;
 
-/*ssrouter.get('/Dashboard' ,(req, res) =>{
-	var url_parts = url.parse(req.url, true);
-	var query = url_parts.query;
-	console.log(query);
-	res.render( 'palette.hbs',{ user :'ENJOY', src: 'query'});
-	
-} );
-*/
 
 router.post('/Dashboard', (req, res) =>{
 	const fractal = req.body.fractal;
