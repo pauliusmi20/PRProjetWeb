@@ -1,5 +1,9 @@
 module.exports = (app) => {
 
+app.get('/Home', function (req, res) {
+  res.sendFile(__dirname + "/public/html/PrinciplePage.html");
+})
+
 app.get('/faq', function (req, res) {
   res.sendFile(__dirname + "/public/html/faq.html");
 });
@@ -20,12 +24,12 @@ app.get('/forgotpassword', function (req, res) {
   res.sendFile(__dirname + "/public/html/forgotpassword.html");
 });
 
-app.get('/return', function (req, res) {
+/*app.get('/return', function (req, res) {
   res.sendFile(__dirname + "/public/html/index.html");
-});
+});*/
 
 app.get('/*', function (req, res) {
-  res.sendFile(__dirname + "/public/html/index.html");
+  res.sendFile(__dirname + "/public/html/PrinciplePage.html");
 });
 
 };
